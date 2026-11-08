@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WebCadiz Studio crea páginas web modernas y adaptadas al móvil para talleres, autónomos y negocios locales de Cádiz.">
+<meta name="theme-color" content="#071426">
+<title>WebCadiz Studio | Diseño web en Cádiz</title>
+<style>
+:root{--navy:#071426;--navy2:#0d2038;--blue:#12b8f3;--cyan:#67d8ff;--white:#f7fbff;--muted:#b8c8d8;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(1100px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(7,20,38,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.4px}.logo-mark{width:39px;height:39px;border:1px solid var(--blue);border-radius:11px;display:grid;place-items:center;color:var(--cyan);font-size:20px}
+.logo span{color:var(--cyan)}nav{display:flex;gap:26px;color:var(--muted);font-size:14px}nav a:hover{color:white}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#08a9e7,#087acb);padding:14px 20px;border-radius:10px;font-weight:750;color:white;box-shadow:0 10px 30px #009fe733;border:0}
+.btn.secondary{background:transparent;border:1px solid #ffffff35;box-shadow:none}
+.hero{padding:92px 0 82px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 20%,#087cbd3d,transparent 40%),linear-gradient(180deg,#0a1b31,#071426)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:54px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--cyan);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.8px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--blue);box-shadow:0 0 15px var(--blue)}
+h1{font-size:clamp(42px,6.5vw,70px);line-height:1.04;letter-spacing:-2.8px;margin:20px 0}
+h1 em{font-style:normal;color:var(--cyan)}.lead{font-size:18px;color:var(--muted);max-width:590px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.visual{border:1px solid #ffffff20;border-radius:25px;padding:23px;background:linear-gradient(145deg,#ffffff10,#ffffff04);box-shadow:0 30px 90px #0005;transform:rotate(1deg)}
+.screen{border-radius:15px;background:#f3f8fc;color:#10243b;padding:20px;min-height:260px}
+.screen-top{display:flex;justify-content:space-between;align-items:center;color:#607286;font-size:11px;border-bottom:1px solid #dce5ed;padding-bottom:12px}
+.screen h3{font-size:25px;line-height:1.12;margin:28px 0 8px;max-width:250px}
+.screen p{font-size:12px;color:#66788a}.screen-cta{display:inline-block;background:#078bd0;color:white;padding:8px 12px;border-radius:6px;font-size:10px;margin-top:10px}
+.screen-bars{display:flex;gap:8px;margin-top:23px}.screen-bars i{display:block;height:48px;flex:1;border-radius:7px;background:linear-gradient(135deg,#dbeefa,#b9def1)}
+.screen-bars i:nth-child(2){background:linear-gradient(135deg,#c9d8ed,#a7c4df)}.screen-bars i:nth-child(3){background:linear-gradient(135deg,#d8eee8,#b2ddd0)}
+.section{padding:82px 0}.section.alt{background:#0a1a2e;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-head{max-width:680px;margin-bottom:34px}.section h2{font-size:clamp(30px,4vw,43px);line-height:1.13;letter-spacing:-1.3px;margin:12px 0}
+.sub{color:var(--muted);font-size:16px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:25px;border:1px solid var(--line);border-radius:16px;background:#ffffff07}
+.icon{width:43px;height:43px;border-radius:12px;display:grid;place-items:center;background:#0ca9e51c;color:var(--cyan);font-size:20px}
+.card h3{font-size:19px;margin:17px 0 7px}.card p{color:var(--muted);font-size:14px;margin:0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.step b{color:var(--cyan);font-size:12px;letter-spacing:1.4px}.step h3{margin:9px 0 6px}.step p{color:var(--muted);font-size:14px}
+.cta{padding:60px 35px;border-radius:22px;background:radial-gradient(circle at 90% 10%,#18b9f344,transparent 35%),linear-gradient(130deg,#102e4d,#0a1a2e);border:1px solid #ffffff20;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta h2{font-size:clamp(27px,4vw,40px);line-height:1.12;margin:0 0 9px}.cta p{color:var(--muted);margin:0}
+footer{padding:30px 0;border-top:1px solid var(--line);color:#91a5b8;font-size:13px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:780px){nav{display:none}.hero{padding:65px 0}.hero-grid{grid-template-columns:1fr;gap:35px}.visual{max-width:480px}.cards,.steps{grid-template-columns:1fr}.section{padding:62px 0}.cta{padding:32px 24px;align-items:flex-start;flex-direction:column}h1{letter-spacing:-1.8px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="logo" href="#"><span class="logo-mark">&lt;/&gt;</span><span style="color:#fff">WebCadiz<span> Studio</span></span></a>
+<nav><a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a></nav>
+<a class="btn" href="#contacto">Pedir información</a>
+</div></header>
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<div class="eyebrow"><i class="dot"></i> Diseño web · Cádiz y alrededores</div>
+<h1>Tu negocio merece una web que <em>trabaje por ti.</em></h1>
+<p class="lead">Creamos páginas web modernas, rápidas y adaptadas al móvil para talleres, autónomos y negocios locales. Haz que tus clientes encuentren tus servicios y contacten contigo fácilmente.</p>
+<div class="actions"><a class="btn" href="#contacto">Quiero una web <span>→</span></a><a class="btn secondary" href="#servicios">Ver servicios</a></div>
+</div>
+<div class="visual" aria-label="Vista de ejemplo de una página web">
+<div class="screen"><div class="screen-top"><strong>WEB PARA TU NEGOCIO</strong><span>INICIO&nbsp;&nbsp; SERVICIOS&nbsp;&nbsp; CONTACTO</span></div>
+<h3>Más visibilidad.<br>Más oportunidades.</h3><p>Una presencia online clara y profesional para tu negocio.</p><span class="screen-cta">SOLICITAR PRESUPUESTO</span><div class="screen-bars"><i></i><i></i><i></i></div></div>
+</div>
+</div></section>
+<section class="section" id="servicios"><div class="container">
+<div class="section-head"><div class="eyebrow">Qué podemos hacer por ti</div><h2>Una web pensada para conseguir clientes.</h2><p class="sub">Diseño sencillo, información clara y contacto directo. Adaptamos cada proyecto al tipo de negocio y a lo que realmente necesita.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">⌘</div><h3>Diseño web profesional</h3><p>Una página atractiva, ordenada y adaptada a móviles, tablets y ordenadores.</p></article>
+<article class="card"><div class="icon">⚙</div><h3>Web para talleres y oficios</h3><p>Presenta servicios, especialidades, fotos de trabajos, ubicación y formas de contacto.</p></article>
+<article class="card"><div class="icon">↗</div><h3>Contacto fácil</h3><p>Botones para llamar, escribir por WhatsApp o solicitar información sin complicaciones.</p></article>
+</div></div></section>
+<section class="section alt" id="proceso"><div class="container">
+<div class="section-head"><div class="eyebrow">Proceso sencillo</div><h2>De la idea a tu nueva web.</h2><p class="sub">Te acompañamos paso a paso y mantenemos el proceso claro desde el principio.</p></div>
+<div class="steps">
+<div class="step"><b>01 — HABLAMOS</b><h3>Cuéntanos qué necesitas</h3><p>Conocemos tu negocio, tus servicios y el tipo de clientes que quieres atraer.</p></div>
+<div class="step"><b>02 — DISEÑAMOS</b><h3>Preparamos tu propuesta</h3><p>Te enseñamos un diseño y ajustamos los detalles contigo antes de publicarlo.</p></div>
+<div class="step"><b>03 — PUBLICAMOS</b><h3>Tu web lista para compartir</h3><p>Una vez aprobado el contenido y acordados dominio y alojamiento, ponemos la web online.</p></div>
+</div></div></section>
+<section class="section" id="contacto"><div class="container">
+<div class="cta"><div><div class="eyebrow">Hablemos de tu proyecto</div><h2>¿Preparado para dar el siguiente paso?</h2><p>Cuéntanos qué negocio tienes y te preparamos una propuesta sin compromiso.</p></div><a class="btn" href="mailto:hola@webcadizstudio.es?subject=Consulta%20sobre%20una%20web">Solicitar información →</a></div>
+<p class="sub" style="font-size:12px;margin-top:17px">Nota: sustituye el correo de ejemplo por tu dirección real antes de publicar. También podemos añadir tu WhatsApp de empresa.</p>
+</div></section>
+</main>
+<footer><div class="container foot"><span><strong style="color:#fff">WebCadiz Studio</strong> · Diseño web para negocios locales</span><span>Cádiz, España · © 2026</span></div></footer>
+</body></html>
