@@ -40,12 +40,31 @@ h1 span{color:#67d8ff}.lead,.sub,.micro{color:#b8c8d8}
 .contact-panel{background:linear-gradient(130deg,#102e4d,#0a1a2e);border:1px solid #ffffff20}
 footer{background:#071426;border-top:1px solid var(--line);color:#91a5b8}.footer-inner strong{color:#fff}
 
+
+/* Pricing */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;align-items:stretch}
+.pricing-card{display:flex;flex-direction:column;position:relative;padding:27px}
+.pricing-card.featured{border-color:#12b8f3;box-shadow:0 12px 38px #12b8f31a}
+.plan-label{font-size:11px;font-weight:850;letter-spacing:1.1px;color:#67d8ff;text-transform:uppercase}
+.plan-price{font-size:43px;line-height:1.1;font-weight:850;letter-spacing:-1.8px;margin:13px 0 3px;color:#fff}
+.plan-desc{font-size:13px;color:#b8c8d8;margin:0 0 18px}
+.plan-features{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:10px}
+.plan-features li{font-size:14px;color:#dbe6f1;display:flex;gap:9px;align-items:flex-start}
+.plan-features li:before{content:"✓";font-weight:900;color:#67d8ff}
+.pricing-card .btn{margin-top:auto;width:100%}
+.pricing-note{font-size:13px;color:#aebfd0;margin:22px 0 0;max-width:850px}
+.maintenance-box{margin-top:22px;padding:22px 25px;border:1px solid #12b8f34d;border-radius:13px;background:#0ca9e50d;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.maintenance-box strong{display:block;color:#fff;font-size:17px}
+.maintenance-box p{margin:3px 0 0;color:#b8c8d8;font-size:13px}
+.maintenance-price{font-size:28px;font-weight:850;color:#67d8ff;white-space:nowrap}
+@media(max-width:800px){.pricing-grid{grid-template-columns:1fr}.maintenance-box{align-items:flex-start;flex-direction:column}.plan-price{font-size:39px}}
+
 </style>
 </head>
 <body>
 <header><div class="container nav">
 <a class="brand" href="#inicio" aria-label="WebCadiz Studio, inicio"><span class="brand-mark">&lt;/&gt;</span><span>WebCadiz <span>Studio</span></span></a>
-<nav aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#proceso">Cómo funciona</a><a href="#contacto">Contacto</a></nav>
+<nav aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#precios">Precios</a><a href="#proceso">Cómo funciona</a><a href="#contacto">Contacto</a></nav>
 <a class="btn" href="#contacto">Hablemos <span aria-hidden="true">→</span></a>
 </div></header>
 <main>
@@ -70,6 +89,16 @@ footer{background:#071426;border-top:1px solid var(--line);color:#91a5b8}.footer
 <article class="card"><div class="card-icon">03</div><h3>Contacto directo</h3><p>Añadimos accesos para que tus clientes puedan llamarte o escribirte por WhatsApp fácilmente.</p></article>
 </div>
 <div class="audience"><span class="tag">Talleres y mecánicos</span><span class="tag">Electricistas y fontaneros</span><span class="tag">Cerrajeros</span><span class="tag">Comercios locales</span><span class="tag">Autónomos</span></div>
+</div></section>
+<section class="section" id="precios"><div class="container">
+<div class="section-head"><div class="eyebrow">Precios claros</div><h2>Elige la web que necesita tu negocio.</h2><p class="sub">Planes iniciales para autónomos y pequeños negocios. Hablamos contigo antes de empezar para confirmar el alcance y el precio final.</p></div>
+<div class="pricing-grid">
+<article class="card pricing-card"><div class="plan-label">Starter</div><h3>Landing Page</h3><div class="plan-price">149 €</div><p class="plan-desc">Para presentar tu negocio de forma sencilla y profesional.</p><ul class="plan-features"><li>Una página web de una sola sección larga</li><li>Diseño adaptado a móviles y ordenadores</li><li>Información de tu negocio y servicios</li><li>Botón directo a WhatsApp</li></ul><a class="btn btn-outline" href="https://wa.me/34637474662?text=Hola%2C%20me%20interesa%20el%20plan%20Landing%20Page%20de%20149%E2%82%AC.">Consultar este plan ↗</a></article>
+<article class="card pricing-card featured"><div class="plan-label">Más elegido</div><h3>Business Website</h3><div class="plan-price">299 €</div><p class="plan-desc">Para negocios que necesitan explicar mejor sus servicios.</p><ul class="plan-features"><li>Hasta 5 páginas</li><li>Diseño moderno y adaptado a móviles</li><li>Servicios y galería de fotos</li><li>Formulario de contacto y WhatsApp</li><li>Configuración SEO básica</li></ul><a class="btn" href="https://wa.me/34637474662?text=Hola%2C%20me%20interesa%20el%20plan%20Business%20Website%20de%20299%E2%82%AC.">Consultar este plan ↗</a></article>
+<article class="card pricing-card"><div class="plan-label">Más completo</div><h3>Premium Website</h3><div class="plan-price">449 €</div><p class="plan-desc">Para una presencia online más completa y personalizada.</p><ul class="plan-features"><li>Hasta 8 páginas</li><li>Diseño personalizado</li><li>Funciones de contacto avanzadas</li><li>Configuración SEO básica</li><li>Dos rondas de revisiones</li></ul><a class="btn btn-outline" href="https://wa.me/34637474662?text=Hola%2C%20me%20interesa%20el%20plan%20Premium%20Website%20de%20449%E2%82%AC.">Consultar este plan ↗</a></article>
+</div>
+<div class="maintenance-box"><div><strong>Mantenimiento opcional</strong><p>Pequeñas actualizaciones y soporte básico. El alcance se acuerda antes de contratarlo.</p></div><div class="maintenance-price">19 €/mes</div></div>
+<p class="pricing-note">Precios iniciales. El presupuesto final se confirma por escrito antes de comenzar. Dominio, alojamiento web, herramientas de pago, tienda online y funciones especiales no están incluidos y se presupuestan aparte. Para reservar el proyecto: 50 % al comenzar y 50 % antes de la publicación.</p>
 </div></section>
 <section class="section section-soft" id="proceso"><div class="container">
 <div class="section-head"><div class="eyebrow">Cómo funciona</div><h2>Un proceso fácil, de principio a fin.</h2><p class="sub">Tú conoces tu negocio. Nosotros te ayudamos a presentarlo bien en internet.</p></div>
